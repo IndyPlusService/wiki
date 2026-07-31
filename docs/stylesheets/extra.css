@@ -82,7 +82,7 @@
 
 /* Цвет ссылок при наведении мыши в футере при тёмной теме */
 [data-md-color-scheme="slate"] .md-copyright a:hover {
-    color: #f87626 !important; /* Чуть более темный оранжевый при наведении */
+    color: #7c4dff !important; /* Чуть более темный оранжевый при наведении */
 }
 
 :target {

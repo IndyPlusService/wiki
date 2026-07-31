@@ -8,7 +8,7 @@ hide:
 
 # Главная
 
-### Добро пожаловать в базу знаний сервиса Canvas Proxy. Здесь собраны инструкции по исправлению возможных проблем и ответы на часто задаваемые вопросы.
+### Добро пожаловать в базу знаний сервиса Indy+. Здесь собраны инструкции по исправлению возможных проблем и ответы на часто задаваемые вопросы.
 
 <div class="grid cards" markdown style="text-align: center; margin-bottom: 2.5rem;">
 
@@ -46,9 +46,9 @@ hide:
 
 </div>
 
-[Перейти в бота](https://t.me/CanvasProxyBot){ .md-button .md-button }
-[Написать в поддержку](https://t.me/CanvasProxyHelp){ .md-button }
-[Перейти в канал](https://t.me/CanvasProxy){ .md-button }
+[Перейти в бота](https://t.me/IndyPlusBot){ .md-button .md-button }
+[Написать в поддержку](https://t.me/IndyPlusManager){ .md-button }
+[Перейти в канал](https://t.me/IndyPlus){ .md-button }
 
 <p style="font-size: 0.85rem; color: var(--md-default-fg-color--light); margin-top: 1.5rem;">
 <i>Кнопки открывают Telegram. Используйте VPN.</i>

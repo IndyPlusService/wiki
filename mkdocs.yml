@@ -1,13 +1,13 @@
-site_name: Canvas Proxy Wiki
-copyright: "&copy; 2026 Canvas Proxy | <a href='https://t.me/CanvasProxyBot' target='_blank'>Бот</a>, <a href='https://t.me/CanvasProxy' target='_blank'>Канал</a>, <a href='https://t.me/CanvasProxyHelp' target='_blank'>Поддержка</a>"
+site_name: Indy+ Wiki
+copyright: "&copy; 2023 — 2026 Indy+ | <a href='https://t.me/IndyPlusBot' target='_blank'>Бот</a>, <a href='https://t.me/IndyPlus' target='_blank'>Канал</a>, <a href='https://t.me/IndyPlusManager' target='_blank'>Поддержка</a>"
 site_description: База знаний
 extra_css:
   - stylesheets/extra.css
 theme:
   name: material
   language: ru
-  logo: https://raw.githubusercontent.com/CanvasProxy/assets/main/Logotipe-Canvas-Proxy-12%201.svg
-  favicon: https://raw.githubusercontent.com/CanvasProxy/assets/main/Logotipe-Canvas-Proxy-12%201.svg
+  logo: https://cdn.jsdelivr.net/gh/IndyPlusService/assets@main/indy_logo.svg
+  favicon: https://cdn.jsdelivr.net/gh/IndyPlusService/assets@main/indy_logo.svg
   font:
     text: Roboto
     code: Roboto Mono
@@ -22,8 +22,8 @@ theme:
   palette:
     # Темная тема
       scheme: slate
-      primary: black        # Цвет шапки (попробуй indigo, blue grey, deep purple)
-      accent: deep orange   # Цвет активных элементов (попробуй orange, cyan, teal)
+      primary: black        # Цвет шапки
+      accent: deep purple   # Цвет активных элементов
 markdown_extensions:
   - attr_list
   - md_in_html
