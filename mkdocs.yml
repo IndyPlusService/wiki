@@ -1,4 +1,5 @@
 site_name: Indy+ Wiki
+site_url: https://wiki.indy-plus.com/
 copyright: "&copy; 2023 — 2026 Indy+ | <a href='https://t.me/IndyPlusBot' target='_blank'>Бот</a>, <a href='https://t.me/IndyPlus' target='_blank'>Канал</a>, <a href='https://t.me/IndyPlusManager' target='_blank'>Поддержка</a>"
 site_description: База знаний
 extra_css:
@@ -29,7 +30,6 @@ markdown_extensions:
   - md_in_html
   - admonition
   - pymdownx.details
-  - md_in_html
   - toc:
       permalink: false
   - pymdownx.emoji:

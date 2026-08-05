@@ -8,9 +8,10 @@ document.addEventListener("DOMContentLoaded", function() {
         
         // Добавляем действие при клике
         titleBlock.addEventListener('click', function() {
-            // Перенаправляем на главную страницу сайта. 
-            // Если нужно уводить в бота, замените '/' на 'https://t.me/CanvasProxyBot'
-            window.location.href = '/'; 
+            // Берём ссылку главной страницы из логотипа, чтобы переход работал
+            // и на собственном домене, и на стандартном адресе GitHub Pages.
+            var homeLink = document.querySelector('.md-header__button.md-logo');
+            window.location.href = homeLink ? homeLink.href : '/';
         });
     }
 });
