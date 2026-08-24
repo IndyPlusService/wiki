@@ -88,3 +88,75 @@
 :target {
     scroll-margin-top: 80px !important; /* Увеличь значение, если шапка шире */
 }
+
+/* Визуально разделяем пункты встроенного оглавления. */
+.md-nav--secondary > .md-nav__list[data-md-component="toc"] {
+    padding-top: 0.5rem;
+}
+
+.md-nav--secondary > .md-nav__list[data-md-component="toc"] > .md-nav__item {
+    margin: 0.24rem 0;
+}
+
+.md-nav--secondary > .md-nav__list[data-md-component="toc"] > .md-nav__item > .md-nav__link {
+    display: block;
+    margin: 0;
+    padding: 0.42rem 0.55rem;
+    line-height: 1.35;
+    background-color: var(--md-default-fg-color--lightest);
+    border: 1px solid var(--md-default-fg-color--lightest);
+    border-left: 0.15rem solid var(--md-default-fg-color--lighter);
+    border-radius: 0.35rem;
+    transition:
+        color 125ms,
+        background-color 125ms,
+        border-color 125ms,
+        box-shadow 125ms;
+}
+
+.md-nav--secondary > .md-nav__list[data-md-component="toc"] > .md-nav__item > .md-nav__link:hover,
+.md-nav--secondary > .md-nav__list[data-md-component="toc"] > .md-nav__item > .md-nav__link:focus-visible,
+.md-nav--secondary > .md-nav__list[data-md-component="toc"] > .md-nav__item > .md-nav__link--active {
+    color: var(--md-accent-fg-color);
+    background-color: var(--md-accent-fg-color--transparent);
+    border-color: var(--md-accent-fg-color--transparent);
+    border-left-color: var(--md-accent-fg-color);
+    box-shadow: 0 0.1rem 0.3rem var(--md-default-bg-color--lighter);
+}
+
+.md-nav--secondary > .md-nav__list[data-md-component="toc"] > .md-nav__item > .md-nav__link:focus-visible {
+    outline: 0.1rem solid var(--md-accent-fg-color);
+    outline-offset: 0.1rem;
+}
+
+.md-nav--secondary > .md-nav__list[data-md-component="toc"] > .md-nav__item > .md-nav__link--active {
+    font-weight: 600;
+}
+
+/* Дважды подсвечиваем заголовок раздела после перехода из оглавления. */
+.md-typeset .indy-section-highlight {
+    margin-inline-start: -0.4rem;
+    padding-inline-start: 0.4rem;
+    border-radius: 0.25rem;
+    animation: indy-section-highlight 1.25s linear;
+}
+
+@keyframes indy-section-highlight {
+    0%,
+    32%,
+    49%,
+    81% {
+        background-color: var(--md-accent-fg-color--transparent);
+        background-color: color-mix(in srgb, var(--md-accent-fg-color) 24%, transparent);
+        box-shadow: 0 0 0.9rem 0.16rem var(--md-accent-fg-color--transparent);
+        box-shadow: 0 0 0.9rem 0.16rem color-mix(in srgb, var(--md-accent-fg-color) 32%, transparent);
+    }
+
+    33%,
+    48%,
+    82%,
+    100% {
+        background-color: transparent;
+        box-shadow: 0 0 0 0 transparent;
+    }
+}
