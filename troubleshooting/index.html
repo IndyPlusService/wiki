@@ -1,0 +1,1057 @@
+<!DOCTYPE html><html lang="ru" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="База знаний">
+      
+      
+      
+        <link rel="canonical" href="https://wiki.indy-plus.com/troubleshooting/">
+      
+      
+        <link rel="prev" href="../connection/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="https://cdn.jsdelivr.net/gh/IndyPlusService/assets@main/indy_logo.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Решение проблем - Indy+ Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
+    <a href=".." title="Indy+ Wiki" class="md-header__button md-logo" aria-label="Indy+ Wiki" data-md-component="logo">
+      
+  <img src="https://cdn.jsdelivr.net/gh/IndyPlusService/assets@main/indy_logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Indy+ Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Решение проблем
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Поиск" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Поиск">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Очистить" aria-label="Очистить" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Инициализация поиска
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Вкладки" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Главная
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../general/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Общие вопросы
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../whitelist/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Белые списки
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../connection/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Подключение
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Решение проблем
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Навигация" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Indy+ Wiki" class="md-nav__button md-logo" aria-label="Indy+ Wiki" data-md-component="logo">
+      
+  <img src="https://cdn.jsdelivr.net/gh/IndyPlusService/assets@main/indy_logo.svg" alt="logo">
+
+    </a>
+    Indy+ Wiki
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix="">
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Главная
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../general/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Общие вопросы
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../whitelist/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Белые списки
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../connection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Подключение
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Решение проблем
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Решение проблем
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Не добавляется ссылка в приложение (нет локаций для подключения) / Не обновляется по кнопке
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vpn-not-working" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VPN подключён, но не работает (или все локации н/д)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#happ-user-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        В Happ нет «Лучшей локации» и пометки JSON
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Высокий пинг в приложении
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Достиг лимита устройств
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vpn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Российские приложения просят выключить VPN
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vpn-huawei" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Не работает VPN на устройстве Huawei
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vpn_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Российские сайты просят выключить VPN
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#youtube" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        YouTube показывает рекламу
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Не хватает стабильности в играх
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chatgpt-youtube-telegram" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Не работает конкретный сервис (ChatGPT, YouTube, Telegram).
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gemini" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Если не открывается Gemini
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Если не открывается Gemini">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ошибка «Подозрительный трафик»
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gemini_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gemini недоступен в вашем регионе
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tiktok-iphone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Если TikTok показывает только старые видео на iPhone
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#web-proxy-unavailable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Нет кнопки «ТГ-прокси» или раздел недоступен
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#web-proxy-not-working" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Веб-прокси не подключается или работает нестабильно
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vpn-ios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Спустя время отключается VPN на iOS
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Проблемы с оплатой
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<style>
+  .md-typeset h3 {
+      color: #60dd8b !important;
+  }
+</style>
+
+<h1 id="_1">Решение проблем</h1>
+<h3 id="_2">Не добавляется ссылка в приложение (нет локаций для подключения) / Не обновляется по кнопке</h3>
+<ol>
+<li>Установите актуальную версию программы, через которую выполняется подключение (Happ, incy и др.)</li>
+<li>Отключите другие VPN-приложения (если обновляете ссылку, есть смысл выключить VPN и в активном приложении)</li>
+<li>Смените сеть (с мобильного интернета на Wi-Fi или наоборот).</li>
+<li>
+<p>Если у вас Android, проверьте в настройках, выключен ли частный DNS-сервер.</p>
+<details class="info">
+<summary>Нажмите, чтобы посмотреть фото</summary>
+<p><b>Найдите этот пункт в настройках телефона. Обычно его можно найти через поиск.</b>
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/android/search_dns.png" data-desc-position="bottom"><img alt="Скриншот" src="../assets/android/search_dns.png" width="50%"></a>
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/android/dns_off.png" data-desc-position="bottom"><img alt="Скриншот" src="../assets/android/dns_off.png" width="50%"></a></p>
+</details>
+</li>
+<li>
+<p>Попробуйте альтернативное приложение (например, incy вместо Happ).</p>
+</li>
+</ol>
+<hr>
+<h3 id="vpn-not-working">VPN подключён, но не работает (или все локации н/д)</h3>
+<ol>
+<li>Проверьте, не используете ли вы программы типа Torrent (или иные, которые могут скачивать или раздавать файлы по протоколу BitTorrent). Для скачивания и раздачи торрентов предоставляется отдельная локация, на остальных локациях подобные соединения разрываются в связи с соблюдением европейскими странами законов об авторском праве. </li>
+<li>Установите актуальную версию программы, через которую выполняется подключение (Happ, incy и др.)</li>
+<li>
+<p>Нажмите кнопку обновления в приложении. Локации также обновляются автоматически раз в час, но ручное обновление
+   позволяет сразу получить актуальную конфигурацию.</p>
+<details class="info">
+<summary>Нажмите, чтобы посмотреть фото</summary>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/incy/refresh.png" data-desc-position="bottom"><img alt="Обновление конфигурации в приложении incy" src="../assets/incy/refresh.png" width="70%"></a></p>
+</details>
+</li>
+<li>
+<p>Проверьте пинг в приложении. Подключайтесь к серверу, где появились числа.</p>
+<details class="info">
+<summary>Нажмите, чтобы посмотреть фото</summary>
+<p><b>На скриншоте приложение incy, но аналогичным образом пинг проверяется и в других приложениях для подключения.</b>
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/incy/ping.png" data-desc-position="bottom"><img alt="Проверка пинга в приложении incy" src="../assets/incy/ping.png" width="70%"></a></p>
+</details>
+</li>
+<li>
+<p>Если у вас Android, проверьте в настройках, выключен ли частный DNS-сервер.</p>
+<details class="info">
+<summary>Нажмите, чтобы посмотреть фото</summary>
+<p><b>Найдите этот пункт в настройках телефона. Обычно его можно найти через поиск.</b> 
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/android/search_dns.png" data-desc-position="bottom"><img alt="Скриншот" src="../assets/android/search_dns.png" width="50%"></a>
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/android/dns_off.png" data-desc-position="bottom"><img alt="Скриншот" src="../assets/android/dns_off.png" width="50%"></a></p>
+</details>
+</li>
+<li>
+<p>Проверьте доступность интернета без VPN. Если не загружается, например, Google, значит, в вашем регионе могут действовать «белые списки». Используйте одноимённую локацию: трафик для неё уже входит в каждый тариф, а при необходимости его можно докупить. Подробнее: <a href="../whitelist/#about-whitelist">Кликните</a></p>
+</li>
+<li>Проверьте скорость своего интернета без VPN. Возможно, он медленный сам по себе: <a href="https://yandex.ru/internet/">Кликните</a></li>
+<li>
+<p>Если используете Happ, проверьте настройки приложения и отключите лишние ползунки (или используйте другое приложение, например, incy). Если принципиально использование Happ, используйте кнопку сброса в настройках приложения (нужно будет заново добавлять ссылки).</p>
+<details class="info">
+<summary>Нажмите, чтобы посмотреть фото</summary>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/happ/settings_button.png" data-desc-position="bottom"><img alt="Скриншот" src="../assets/happ/settings_button.png" width="40%"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/happ/settings.png" data-desc-position="bottom"><img alt="Скриншот" src="../assets/happ/settings.png" width="50%"></a></p>
+</details>
+</li>
+<li>
+<p>Отключите сторонние программы для обхода блокировок (GoodbyeDPI/zapret), если они есть. Они могут конфликтовать с VPN.</p>
+</li>
+<li>Попробуйте альтернативное приложение (например, incy вместо Happ).</li>
+</ol>
+<hr>
+<h3 id="happ-user-agent">В Happ нет «Лучшей локации» и пометки JSON</h3>
+<p>Если в Happ одновременно отсутствуют локация <strong>«Лучшая локация»</strong> и пометка <strong>JSON</strong>, причина обычно в заданном вручную
+значении <strong>User-Agent</strong>.</p>
+<ol>
+<li>Откройте <strong>Happ → Настройки → Подписки</strong> и выберите нужную подписку.</li>
+<li>Полностью очистите поле <strong>User-Agent</strong>: оно должно быть пустым, без пробелов и других значений.</li>
+<li>Сохраните изменения, затем обновите подписку и список локаций.</li>
+</ol>
+<p>Если это не помогло, сбросьте настройки Happ и заново добавьте персональную ссылку из бота. После сброса другие настройки
+приложения тоже потребуется задать заново.</p>
+<p>Также можно воспользоваться приложением <strong>incy.</strong></p>
+<hr>
+<h3 id="_3">Высокий пинг в приложении</h3>
+<p>В Happ выберите <strong>via Proxy → HEAD</strong> с режимом <strong>keepalive</strong>, затем повторите проверку несколько раз. Выбирайте локацию с
+наименьшим стабильным пингом.</p>
+<p>Подробнее о способе проверки и схемы: <a href="../general/#happ-ping">Кликните</a>.</p>
+<hr>
+<h3 id="_4">Достиг лимита устройств</h3>
+<p>Вы можете перейти в бота и удалить неиспользуемые устройства — одно или сразу все. После этого снова добавятся только
+те устройства, на которых вы подключитесь к VPN. Маршрут: <strong>«Меню» → «Подключить VPN» → «Мои устройства»</strong>.</p>
+<p>Если устройств всё равно не хватает, выберите платный тариф с более высоким лимитом: Базовый поддерживает 2 устройства,
+Оптимальный — 6, Максимальный — 15. На новом аккаунте во время пробного доступа за подписку на канал также доступно
+2 устройства.</p>
+<hr>
+<h3 id="vpn">Российские <u>приложения</u> просят выключить VPN</h3>
+<p>Сначала подключитесь к локации <strong>«Лучшая локация»</strong>. Если приложение всё равно просит выключить VPN, настройте обход,
+как показано на скриншоте. В примере приложение Happ, но похожим образом всё настраивается и в других подобных приложениях.</p>
+<div class="admonition warning">
+<p class="admonition-title">Ограничение на устройствах Apple</p>
+<p>Раздельный обход приложений недоступен на iPhone, iPad, Mac и Apple TV.</p>
+</div>
+<details class="info">
+<summary>Нажмите, чтобы посмотреть фото</summary>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/happ/settings_button.png" data-desc-position="bottom"><img alt="Скриншот" src="../assets/happ/settings_button.png" width="40%"></a>
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/happ/russian_apps.png" data-desc-position="bottom"><img alt="Скриншот" src="../assets/happ/russian_apps.png" width="70%"></a></p>
+</details>
+<hr>
+<h3 id="vpn-huawei">Не работает VPN на устройстве Huawei</h3>
+<p>На устройствах Huawei установите Happ или incy напрямую из APK. Официальные прямые загрузки находятся в разделе
+приложений: <a href="../general/#apps">Кликните</a>. <strong>Не устанавливайте и не запускайте Happ или incy через GBox:</strong> в таком варианте
+VPN-подключение работать не будет.</p>
+<p>После прямой установки откройте обычную инструкцию подключения: <a href="../connection/#first-connection">Кликните</a>.</p>
+<hr>
+<h3 id="vpn_1">Российские <u>сайты</u> просят выключить VPN</h3>
+<p>Подключитесь к локации <strong>«Лучшая локация»</strong> или <strong>«РФ → Зарубеж»</strong>.</p>
+<hr>
+<h3 id="youtube">YouTube показывает рекламу</h3>
+<p>Подключитесь к локации <strong>«РФ → Зарубеж»</strong> или попробуйте другую обычную локацию.</p>
+<hr>
+<h3 id="_5">Не хватает стабильности в играх</h3>
+<p>В первую очередь подключайтесь к локациям, отмеченным как игровые. Если таких локаций нет или они не работают,
+подключитесь к ближайшей к вам обычной локации.</p>
+<hr>
+<h3 id="chatgpt-youtube-telegram">Не работает конкретный сервис (ChatGPT, YouTube, Telegram).</h3>
+<p>Причины проблем с доступностью могут быть разные. Обычно помогает смена локации и перезапуск нужного приложения или сайта.</p>
+<hr>
+<h3 id="gemini">Если не открывается Gemini</h3>
+<h4 id="_6">Ошибка «Подозрительный трафик»</h4>
+<p>Если появляется сообщение:</p>
+<blockquote>
+<p>Мы зарегистрировали подозрительный трафик, исходящий из вашей сети. Повторите запрос позднее.</p>
+</blockquote>
+<ol>
+<li>Полностью закройте вкладку с Gemini — простого обновления страницы недостаточно.</li>
+<li>По возможности смените VPN-локацию.</li>
+<li>Снова откройте сайт Gemini.</li>
+</ol>
+<h4 id="gemini_1">Gemini недоступен в вашем регионе</h4>
+<p>Если Gemini сообщает, что сервис недоступен в текущем регионе:</p>
+<ol>
+<li>Смените VPN-локацию.</li>
+<li>Обновите страницу.</li>
+</ol>
+<p>В этом случае закрывать вкладку не требуется.</p>
+<hr>
+<h3 id="tiktok-iphone">Если TikTok показывает только старые видео на iPhone</h3>
+<p>Выполняйте действия по порядку и остановитесь, когда свежие видео появятся.</p>
+<p><em>Нажмите на кнопки ниже, чтобы открыть порядок действий.</em></p>
+<details class="info">
+<summary>1. Простая проверка</summary>
+<ol>
+<li>Полностью закройте TikTok.</li>
+<li>Подключите VPN.</li>
+<li>Откройте TikTok только после подключения VPN.</li>
+<li>Попробуйте другую VPN-локацию.</li>
+<li>В Happ отключите маршрутизацию в настройках приложения, затем обновите приложение и список серверов.</li>
+<li>Попробуйте incy вместо Happ.</li>
+<li>
+<p>Очистите кэш TikTok:</p>
+<p><code>TikTok → Профиль → ☰ → Настройки и конфиденциальность → Освободить место → Кэш → Очистить</code></p>
+</li>
+<li>
+<p>Перезапустите TikTok и iPhone. Проверьте наличие обновлений TikTok и iOS.</p>
+</li>
+</ol>
+</details>
+<details class="info">
+<summary>2. Отключение геолокации и SIM</summary>
+<ol>
+<li>
+<p>Запретите TikTok доступ к геолокации:</p>
+<p><code>Настройки iPhone → Конфиденциальность и безопасность → Службы геолокации → TikTok → Никогда</code></p>
+</li>
+<li>
+<p>Если в TikTok есть раздел геолокации, удалите сохранённые данные о местоположении.</p>
+</li>
+<li>Полностью закройте TikTok.</li>
+<li>Извлеките физическую SIM-карту или временно отключите линию eSIM. <strong>Не удаляйте саму eSIM.</strong></li>
+<li>Включите авиарежим, затем отдельно включите Wi-Fi.</li>
+<li>Подключите VPN и откройте TikTok.</li>
+</ol>
+</details>
+<details class="info">
+<summary>3. Чистая переустановка</summary>
+<div class="admonition warning">
+<p class="admonition-title">Сохраните черновики</p>
+<p>Перед началом сохраните черновики на устройство или опубликуйте их с видимостью «Только вы». После удаления TikTok
+черновики могут исчезнуть.</p>
+</div>
+<ol>
+<li>
+<p>Временно установите английский язык и регион страны выбранной VPN-локации:</p>
+<p><code>Настройки → Основные → Язык и регион</code></p>
+</li>
+<li>
+<p>Отключите геолокацию для TikTok и SIM/eSIM.</p>
+</li>
+<li>Включите авиарежим, затем Wi-Fi и VPN.</li>
+<li>Полностью удалите TikTok — выберите <strong>«Удалить приложение»</strong>, а не <strong>«Выгрузить приложение»</strong>.</li>
+<li>Перезагрузите iPhone.</li>
+<li>Снова включите Wi-Fi и VPN.</li>
+<li>Установите TikTok из App Store.</li>
+<li>В первый раз откройте TikTok только при подключённом VPN и отключённой SIM.</li>
+<li>Не разрешайте приложению доступ к геолокации.</li>
+<li>Сначала проверьте свежие видео без входа в аккаунт, затем войдите в свой аккаунт.</li>
+</ol>
+<p>Если всё заработало, сначала верните прежние язык и регион и снова проверьте TikTok. Затем включите SIM и проверьте
+ещё раз.</p>
+</details>
+<details class="info">
+<summary>4. Если не помогло</summary>
+<p>Проверьте:</p>
+<ul>
+<li>другой TikTok-аккаунт на том же iPhone;</li>
+<li>основной аккаунт на другом iPhone;</li>
+<li>TikTok без входа через приватную вкладку Safari при включённом VPN.</li>
+</ul>
+<p>Если другой аккаунт работает, проблема связана с основным аккаунтом. В этом случае обратитесь в поддержку TikTok или
+используйте новый аккаунт.</p>
+<p>Если браузерная версия работает, её можно использовать как альтернативу:</p>
+<p><code>Safari → tiktok.com → Поделиться → На экран «Домой»</code></p>
+<p>Если свежие видео открываются по прямым ссылкам, но лента «Для вас» остаётся старой:</p>
+<p><code>Настройки TikTok → Предпочитаемый контент → Обновить ленту «Для вас»</code></p>
+<p>Полный сброс iPhone, модифицированные версии TikTok и неизвестные IPA-файлы использовать не рекомендуется.</p>
+</details>
+<hr>
+<h3 id="web-proxy-unavailable">Нет кнопки «ТГ-прокси» или раздел недоступен</h3>
+<ol>
+<li>Проверьте текущий тариф в <strong>«Меню»</strong>. Веб-прокси входит только в <strong>Оптимальный</strong> и <strong>Максимальный</strong> тарифы.
+   На Базовом, в том числе при пробном доступе на новом аккаунте, этой кнопки нет.</li>
+<li>Убедитесь, что дни подписки не закончились. Для продления или смены тарифа нажмите <strong>«Оплатить продление»</strong>.</li>
+<li>После продления или смены тарифа заново откройте <strong>«Меню» → «ТГ-прокси»</strong>.</li>
+</ol>
+<p>Если подходящий тариф действует, а кнопки по-прежнему нет, бот пишет <strong>«Раздел временно недоступен»</strong> или не показывает
+кнопки <strong>«Подключить»</strong>, обратитесь в поддержку. Наличие раздела также зависит от доступных серверов прокси.
+До восстановления используйте VPN.</p>
+<hr>
+<h3 id="web-proxy-not-working">Веб-прокси не подключается или работает нестабильно</h3>
+<ol>
+<li>Обновите Telegram. Если ссылка из кнопки <strong>«Подключить»</strong> не открывается, убедитесь, что используете приложение
+   с поддержкой WEB-прокси. Если ваш клиент этот формат не поддерживает, используйте VPN.</li>
+<li>Проверьте действующий тариф и срок доступа в боте. На Базовом тарифе и после окончания подписки веб-прокси недоступен.</li>
+<li>Если вы обновляли ссылки в боте, удалите старые записи прокси из Telegram и подключитесь по новым кнопкам.</li>
+<li>Если бот предлагает несколько веб-прокси, выберите другой в настройках Telegram. При наличии настройки
+   <strong>«Автопереключение прокси»</strong> можно включить её.</li>
+<li>Попробуйте другую сеть: Wi-Fi вместо мобильного интернета или наоборот.</li>
+<li>Если ссылкой пользуются посторонние или есть подозрение на превышение лимита, отключите лишние подключения и при
+   необходимости <a href="../connection/#web-proxy-link-update">обновите ссылки в боте</a>.</li>
+</ol>
+<p>Для звонков в Telegram используйте VPN. Если в сети действуют «белые списки», подключайтесь к соответствующей
+VPN-локации. Если веб-прокси всё равно не работает, используйте VPN и обратитесь в поддержку.</p>
+<hr>
+<h3 id="vpn-ios">Спустя время отключается VPN на iOS</h3>
+<p>Возможно, дело в лимите памяти, который выделяется на работающее приложение системой. Установите приложение incy. В нём есть специальная функция: Настройки &gt; Расширенные настройки &gt; Режим No Limit. Там же в настройках можно включить, чтобы в приложении incy на главном экране было видно, сколько памяти тратится. </p>
+<details class="info">
+<summary>Нажмите, чтобы посмотреть фото</summary>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/incy/no_limit.png" data-desc-position="bottom"><img alt="Скриншот" src="../assets/incy/no_limit.png" width="60%"></a></p>
+</details>
+<p>Также были случаи, когда помогало обновить iOS до актуальной версии. Если вы этого ещё не сделали, желательно обновиться.</p>
+<hr>
+<h3 id="_7">Проблемы с оплатой</h3>
+<p>Решение проблем с оплатой описано здесь: <a href="../general/#payment-problem">Кликните</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2023 — 2026 Indy+ | <a href="https://t.me/IndyPlusBot" target="_blank">Бот</a>, <a href="https://t.me/IndyPlus" target="_blank">Канал</a>, <a href="https://t.me/IndyPlusManager" target="_blank">Поддержка</a>
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "search.suggest", "search.highlight", "toc.integrate", "navigation.instant", "navigation.instant.prefetch"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../javascripts/extra.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
