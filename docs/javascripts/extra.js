@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var highlightedHeading = null;
     var highlightTimer = null;
     var pendingHighlightTimers = [];
+    var pendingSearchNavigation = null;
 
     function findHeading(hash) {
         if (!hash || hash === "#") {
@@ -109,8 +110,73 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
+    function isSearchDestination(url) {
+        // При повторном выборе раздела Material может восстановить прежний ?h=.
+        return window.location.origin === url.origin && window.location.pathname === url.pathname && window.location.hash === url.hash;
+    }
+
+    function scrollToSearchResult() {
+        var navigation = pendingSearchNavigation;
+
+        if (!navigation || document.body.hasAttribute("data-md-scrolllock")) {
+            return;
+        }
+
+        if (!isSearchDestination(navigation.url)) {
+            pendingSearchNavigation = null;
+            return;
+        }
+
+        // При смене статьи URL обновляется раньше, чем Material заменяет текст.
+        if (navigation.pathname !== navigation.url.pathname && navigation.content && navigation.content.isConnected) {
+            return;
+        }
+
+        var target = null;
+
+        if (navigation.url.hash) {
+            try {
+                target = document.getElementById(decodeURIComponent(navigation.url.hash.slice(1)));
+            } catch (error) {
+                pendingSearchNavigation = null;
+                return;
+            }
+
+            if (!target) {
+                return;
+            }
+        }
+
+        pendingSearchNavigation = null;
+
+        // Ждём закрытия окна: его анимация ещё может менять мобильный viewport.
+        var search = document.querySelector('[data-md-component="search"]');
+        var animations = search && search.getAnimations ? search.getAnimations({ subtree: true }) : [];
+
+        Promise.all(animations.map(function(animation) {
+            return animation.finished.catch(function() {});
+        })).then(function() {
+            window.requestAnimationFrame(function() {
+                var searchToggle = document.getElementById("__search");
+
+                if (!isSearchDestination(navigation.url) || document.body.hasAttribute("data-md-scrolllock") || (searchToggle && searchToggle.checked)) {
+                    return;
+                }
+
+                if (target && target.isConnected) {
+                    var margin = parseFloat(window.getComputedStyle(target).scrollMarginTop) || 0;
+                    var top = target.getBoundingClientRect().top;
+                    window.scrollTo(0, window.scrollY + top - margin);
+                } else if (!navigation.url.hash) {
+                    window.scrollTo(0, 0);
+                }
+            });
+        });
+    }
+
     function highlightCurrentHash() {
         scheduleHighlight(window.location.hash);
+        scrollToSearchResult();
     }
 
     if (window.indySectionNavigationInitialized) {
@@ -118,6 +184,11 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     window.indySectionNavigationInitialized = true;
+
+    new MutationObserver(scrollToSearchResult).observe(document.body, {
+        attributes: true,
+        attributeFilter: ["data-md-scrolllock"]
+    });
 
     document.addEventListener("click", function(event) {
         if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) {
@@ -128,6 +199,25 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (!(eventTarget instanceof Element)) {
             return;
+        }
+
+        if (eventTarget.closest("a[href]")) {
+            pendingSearchNavigation = null;
+        }
+
+        var searchLink = eventTarget.closest('[data-md-component="search-result"] a[href]');
+
+        if (searchLink && !searchLink.target && !searchLink.hasAttribute("download") && (document.body.hasAttribute("data-md-scrolllock") || !window.matchMedia("(min-width: 60em)").matches)) {
+            var searchUrl = new URL(searchLink.href, window.location.href);
+
+            if (searchUrl.origin === window.location.origin) {
+                pendingSearchNavigation = {
+                    url: searchUrl,
+                    pathname: window.location.pathname,
+                    content: document.querySelector(".md-content__inner")
+                };
+                window.requestAnimationFrame(scrollToSearchResult);
+            }
         }
 
         var link = eventTarget.closest('.md-nav--secondary > .md-nav__list[data-md-component="toc"] a.md-nav__link');
