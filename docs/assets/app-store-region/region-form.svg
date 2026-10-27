@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1110" viewBox="0 0 900 1110" role="img" aria-labelledby="title desc">
+  <title id="title">Схема формы региона США: оплата и пример адреса</title>
+  <desc id="desc">Нет, если вариант доступен. Свои имя и фамилия латиницей. Пример публичного адреса отеля: 100 Continental Dr, Newark, Delaware, 19713. Вторая строка пустая. Код телефона 302, номер 4541500. Этот телефон не предназначен для кодов входа.</desc>
+  <defs><style>
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; fill: #173047; }
+    .title { font-size: 28px; font-weight: 700; }
+    .heading { font-size: 24px; font-weight: 650; }
+    .label { font-size: 20px; fill: #4c6073; }
+    .value { font-size: 23px; font-weight: 550; }
+    .small { font-size: 18px; fill: #4c6073; }
+  </style></defs>
+  <rect width="900" height="1110" rx="24" fill="#f2f6fb"/>
+  <text x="36" y="49" class="title">Оплата и адрес для США</text>
+  <text x="36" y="79" class="small">Схема формы · пример заполнения, а не снимок с устройства</text>
+  <rect x="36" y="105" width="828" height="171" rx="18" fill="#fff" stroke="#c6d3e2" stroke-width="2"/>
+  <text x="60" y="145" class="heading">Способ оплаты</text>
+  <rect x="56" y="165" width="788" height="58" rx="10" fill="#e9f2ff" stroke="#72a2d5"/>
+  <text x="76" y="202" class="value" style="fill:#1458a5">Нет / None — если доступен</text>
+  <path d="M795 191 l9 9 l17 -22" stroke="#1458a5" stroke-width="3" fill="none"/>
+  <text x="60" y="252" class="small">Если пункта нет, Apple может потребовать местный способ оплаты.</text>
+  <rect x="36" y="298" width="828" height="659" rx="18" fill="#fff" stroke="#c6d3e2" stroke-width="2"/>
+  <text x="60" y="339" class="heading">Данные формы</text>
+  <text x="60" y="380" class="label">Имя и фамилия</text><text x="365" y="380" class="value">Свои данные латиницей</text>
+  <path d="M60 399 H840" stroke="#e2e8f0"/>
+  <text x="60" y="439" class="label">Страна/регион</text><text x="365" y="439" class="value">United States</text>
+  <path d="M60 459 H840" stroke="#e2e8f0"/>
+  <text x="60" y="499" class="label">Адрес / Street</text><text x="365" y="499" class="value">100 Continental Dr</text>
+  <path d="M60 519 H840" stroke="#e2e8f0"/>
+  <text x="60" y="559" class="label">Адрес, строка 2</text><text x="365" y="559" class="value" style="fill:#657487">Оставить пустой</text>
+  <path d="M60 579 H840" stroke="#e2e8f0"/>
+  <text x="60" y="619" class="label">Город / City</text><text x="365" y="619" class="value">Newark</text>
+  <path d="M60 639 H840" stroke="#e2e8f0"/>
+  <text x="60" y="679" class="label">Штат / State</text><text x="365" y="679" class="value">Delaware</text>
+  <path d="M60 699 H840" stroke="#e2e8f0"/>
+  <text x="60" y="739" class="label">Индекс / ZIP</text><text x="365" y="739" class="value">19713</text>
+  <path d="M60 759 H840" stroke="#e2e8f0"/>
+  <text x="60" y="807" class="label">Телефон</text>
+  <rect x="365" y="777" width="130" height="61" rx="9" fill="#f2f6fb"/>
+  <rect x="511" y="777" width="329" height="61" rx="9" fill="#f2f6fb"/>
+  <text x="384" y="815" class="value">302</text><text x="530" y="815" class="value">4541500</text>
+  <text x="365" y="865" class="small">Код</text><text x="511" y="865" class="small">Номер</text>
+  <rect x="60" y="895" width="780" height="43" rx="10" fill="#1458a5"/>
+  <text x="450" y="924" class="value" text-anchor="middle" style="fill:#fff">Готово / Далее</text>
+  <text x="36" y="999" class="small">Адрес и телефон — публичные реквизиты отеля Hilton Wilmington/Christiana.</text>
+  <text x="36" y="1028" class="small">Это пример полей, а не ваши персональные данные.</text>
+  <text x="36" y="1066" class="heading">Для кодов входа используйте свой номер телефона.</text>
+</svg>
