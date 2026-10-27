@@ -111,9 +111,19 @@
 
 ### Какие приложения можно использовать для подключения? {: #apps }
 
-Для подключения мы рекомендуем использовать приложения incy или Happ. Выберите ваше устройство, кликнув на кнопку ниже.
+Для подключения можно использовать **incy, Happ или Karing**. Выберите своё устройство ниже.
+
+**В Karing должна быть включена настройка X-HWID.** Если она не включилась автоматически:
+
+1. Откройте **«Профили»** и нажмите **карандаш** рядом с вашей подпиской.
+2. Включите **«X-HWID»** и сохраните изменение галочкой в правом верхнем углу.
+3. Обновите подписку.
+
+Если подписка ещё не добавилась из-за ошибки, включите **X-HWID** прямо на экране добавления профиля, затем сохраните его.
+
 
 ??? Info "Android / Android TV"
+    - Karing (APK): [Скачать](https://github.com/KaringX/karing/releases/latest)
     - incy: [Кликните](https://play.google.com/store/apps/details?id=llc.itdev.incy)
     - Happ: [Кликните](https://play.google.com/store/apps/details?id=com.happproxy)
 
@@ -124,17 +134,22 @@
 
 ??? Info "iOS / macOS / AppleTV"
     ??? Danger "Регион аккаунта РФ"
-        - incy: [Кликните](https://apps.apple.com/ru/app/incy/id6756943388)
+        - Karing: [Скачать в App Store](https://apps.apple.com/ru/app/karing/id6472431552)
+
+        incy и Happ доступны в зарубежном App Store. При необходимости [смените регион по инструкции](connection.md#app-store-region).
 
     ??? Success "Регион аккаунта не РФ"
+        - Karing: [Скачать в App Store](https://apps.apple.com/us/app/karing/id6472431552)
         - incy: [Кликните](https://apps.apple.com/us/app/incy/id6756943388)
         - Happ: [Кликните](https://apps.apple.com/us/app/happ-proxy-utility/id6504287215)
 
 ??? Info "Windows"
+    - Karing: [Скачать](https://github.com/KaringX/karing/releases/latest)
     - incy: [Кликните](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-windows-setup.exe)
     - Happ: [Кликните](https://github.com/Happ-proxy/happ-desktop/releases/latest/download/setup-Happ.x64.exe)
 
 ??? Info "Linux"
+    - Karing: [Скачать](https://github.com/KaringX/karing/releases/latest)
     - incy: [Кликните](https://github.com/INCY-DEV/incy-platforms/releases/latest)
     - Happ: [Кликните](https://github.com/Happ-proxy/happ-desktop/releases/latest)
 
