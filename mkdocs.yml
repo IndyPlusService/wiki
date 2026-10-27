@@ -7,8 +7,8 @@ extra_css:
 theme:
   name: material
   language: ru
-  logo: https://cdn.jsdelivr.net/gh/IndyPlusService/assets@main/indy_logo.svg
-  favicon: https://cdn.jsdelivr.net/gh/IndyPlusService/assets@main/indy_logo.svg
+  logo: assets/branding/indy-logo-round.png
+  favicon: assets/branding/indy-icon-round-32.png
   font:
     text: Roboto
     code: Roboto Mono
