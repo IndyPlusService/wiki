@@ -88,6 +88,7 @@
 
 Сервис работает на смартфонах и планшетах (Android, iOS), компьютерах и ноутбуках (Windows 10-11, macOS, Linux), а также
 телевизорах (Android TV, Apple TV). Устаревшие ОС (например, Windows 7 или 8.1) не поддерживаются.
+Для Windows 7 ниже есть отдельная старая сборка Happ: работа на этой ОС не гарантируется, но отсутствие поддержки само по себе не объясняет конкретный сбой.
 
 ---
 
@@ -147,6 +148,7 @@
     - Karing: [Скачать](https://github.com/KaringX/karing/releases/latest)
     - incy: [Кликните](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-windows-setup.exe)
     - Happ: [Кликните](https://github.com/Happ-proxy/happ-desktop/releases/latest/download/setup-Happ.x64.exe)
+    - Happ для Windows 7 — [скачать Legacy 1.0.2](https://github.com/Happ-proxy/happ-desktop/releases/download/1.0.2/setup-Happ.x86.exe). Разработчик обозначает её как последнюю версию с поддержкой Windows 7; [официальный релиз](https://github.com/Happ-proxy/happ-desktop/releases/tag/1.0.2). Это отдельная старая сборка, не обновляйте её до актуальной версии для Windows 10–11.
 
 ??? Info "Linux"
     - Karing: [Скачать](https://github.com/KaringX/karing/releases/latest)
