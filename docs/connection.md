@@ -34,7 +34,7 @@
 <span id="proxy-tun"></span>
 Проверка режимов Proxy/TUN на компьютере — в [алгоритме решения проблем](troubleshooting.md#vpn-not-working).
 
-На iPhone и iPad рекомендуем [OneXray](#onexray). Для других устройств подойдут, например, Happ или incy. [Ссылки на приложения](general.md#apps).
+[Ссылки на приложения для разных устройств](general.md#apps).
 
 ---
 

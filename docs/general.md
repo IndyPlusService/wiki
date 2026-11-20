@@ -116,17 +116,6 @@
 
 ### Какие приложения можно использовать для подключения? {: #apps }
 
-На iPhone и iPad рекомендуем **OneXray**. Для других устройств выберите приложение из списка ниже.
-
-**В Karing должна быть включена настройка X-HWID.** Если она не включилась автоматически:
-
-1. Откройте **«Профили»** и нажмите **карандаш** рядом с вашей подпиской.
-2. Включите **«X-HWID»** и сохраните изменение галочкой в правом верхнем углу.
-3. Обновите подписку.
-
-Если подписка ещё не добавилась из-за ошибки, включите **X-HWID** прямо на экране добавления профиля, затем сохраните его.
-
-
 ??? Info "Android / Android TV"
     Если приложение недоступно в Google Play, скачайте официальный APK по ссылке рядом с ним.
 
@@ -140,12 +129,26 @@
     - Happ APK: [Кликните](https://github.com/Happ-proxy/happ-android/releases/latest/download/Happ.apk)
 
 ??? Info "iPhone / iPad"
-    Рекомендуем **OneXray** для iOS и iPadOS 16 и новее. Приложение доступно в российском App Store.
+    ??? Success "OneXray — рекомендуем"
+        Приложение доступно в российском App Store. Требуется iOS или iPadOS 16 и новее.
 
-    - [Скачать OneXray в App Store](https://apps.apple.com/ru/app/onexray/id6745748773)
-    - [Как добавить подписку и включить HWID](connection.md#onexray)
+        - [Скачать OneXray в App Store](https://apps.apple.com/ru/app/onexray/id6745748773)
+        - [Как добавить подписку и включить HWID](connection.md#onexray)
 
-    Альтернативы: [Karing](https://apps.apple.com/ru/app/karing/id6472431552), [incy](https://apps.apple.com/us/app/incy/id6756943388) и [Happ](https://apps.apple.com/us/app/happ-proxy-utility/id6504287215).
+    ??? Info "Karing"
+        [Скачать Karing в App Store](https://apps.apple.com/ru/app/karing/id6472431552)
+
+        **В Karing должна быть включена настройка X-HWID.** Если она не включилась автоматически:
+
+        1. Откройте **«Профили»** и нажмите **карандаш** рядом с вашей подпиской.
+        2. Включите **«X-HWID»** и сохраните изменение галочкой в правом верхнем углу.
+        3. Обновите подписку.
+
+        Если подписка ещё не добавилась из-за ошибки, включите **X-HWID** прямо на экране добавления профиля, затем сохраните его.
+
+    - [incy в App Store](https://apps.apple.com/us/app/incy/id6756943388)
+    - [Happ в App Store](https://apps.apple.com/us/app/happ-proxy-utility/id6504287215)
+
     Для установки incy или Happ из российского аккаунта понадобится [сменить регион App Store](connection.md#app-store-region).
 
 ??? Info "macOS / Apple TV"
