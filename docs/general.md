@@ -116,7 +116,7 @@
 
 ### Какие приложения можно использовать для подключения? {: #apps }
 
-Для подключения можно использовать **incy, Happ или Karing**. Выберите своё устройство ниже.
+На iPhone и iPad рекомендуем **OneXray**. Для других устройств выберите приложение из списка ниже.
 
 **В Karing должна быть включена настройка X-HWID.** Если она не включилась автоматически:
 
@@ -139,7 +139,16 @@
     - incy APK: [Кликните](https://github.com/INCY-DEV/incy-platforms/releases/download/latest/Incy.apk)
     - Happ APK: [Кликните](https://github.com/Happ-proxy/happ-android/releases/latest/download/Happ.apk)
 
-??? Info "iOS / macOS / AppleTV"
+??? Info "iPhone / iPad"
+    Рекомендуем **OneXray** для iOS и iPadOS 16 и новее. Приложение доступно в российском App Store.
+
+    - [Скачать OneXray в App Store](https://apps.apple.com/ru/app/onexray/id6745748773)
+    - [Как добавить подписку и включить HWID](connection.md#onexray)
+
+    Альтернативы: [Karing](https://apps.apple.com/ru/app/karing/id6472431552), [incy](https://apps.apple.com/us/app/incy/id6756943388) и [Happ](https://apps.apple.com/us/app/happ-proxy-utility/id6504287215).
+    Для установки incy или Happ из российского аккаунта понадобится [сменить регион App Store](connection.md#app-store-region).
+
+??? Info "macOS / Apple TV"
     ??? Danger "Регион аккаунта РФ"
         - Karing: [Скачать в App Store](https://apps.apple.com/ru/app/karing/id6472431552)
 
