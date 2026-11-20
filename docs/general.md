@@ -129,27 +129,24 @@
     - Happ APK: [Кликните](https://github.com/Happ-proxy/happ-android/releases/latest/download/Happ.apk)
 
 ??? Info "iPhone / iPad"
-    ??? Success "OneXray — рекомендуем"
-        Приложение доступно в российском App Store. Требуется iOS или iPadOS 16 и новее.
+    ??? Danger "Регион аккаунта РФ"
+        - OneXray: [Кликните](https://apps.apple.com/ru/app/onexray/id6745748773)
 
-        - [Скачать OneXray в App Store](https://apps.apple.com/ru/app/onexray/id6745748773)
-        - [Как добавить подписку и включить HWID](connection.md#onexray)
+            На странице подписки нажмите **«Добавить в OneXray»**. В расширенных настройках включите **HWID** и сохраните подписку.
 
-    ??? Info "Karing"
-        [Скачать Karing в App Store](https://apps.apple.com/ru/app/karing/id6472431552)
+        - Karing: [Кликните](https://apps.apple.com/ru/app/karing/id6472431552)
 
-        **В Karing должна быть включена настройка X-HWID.** Если она не включилась автоматически:
+            В настройках профиля (карандаш) включите **X-HWID**, сохраните и обновите подписку. Если профиль ещё не добавлен, включите **X-HWID** при добавлении.
 
-        1. Откройте **«Профили»** и нажмите **карандаш** рядом с вашей подпиской.
-        2. Включите **«X-HWID»** и сохраните изменение галочкой в правом верхнем углу.
-        3. Обновите подписку.
+        incy и Happ доступны в зарубежном App Store. При необходимости [смените регион по инструкции](connection.md#app-store-region).
 
-        Если подписка ещё не добавилась из-за ошибки, включите **X-HWID** прямо на экране добавления профиля, затем сохраните его.
+    ??? Success "Регион аккаунта не РФ"
+        - Karing: [Кликните](https://apps.apple.com/us/app/karing/id6472431552)
 
-    - [incy в App Store](https://apps.apple.com/us/app/incy/id6756943388)
-    - [Happ в App Store](https://apps.apple.com/us/app/happ-proxy-utility/id6504287215)
+            В настройках профиля (карандаш) включите **X-HWID**, сохраните и обновите подписку. Если профиль ещё не добавлен, включите **X-HWID** при добавлении.
 
-    Для установки incy или Happ из российского аккаунта понадобится [сменить регион App Store](connection.md#app-store-region).
+        - incy: [Кликните](https://apps.apple.com/us/app/incy/id6756943388)
+        - Happ: [Кликните](https://apps.apple.com/us/app/happ-proxy-utility/id6504287215)
 
 ??? Info "macOS / Apple TV"
     ??? Danger "Регион аккаунта РФ"
