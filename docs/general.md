@@ -119,9 +119,16 @@
 ??? Info "Android / Android TV"
     Если приложение недоступно в Google Play, скачайте официальный APK по ссылке рядом с ним.
 
-    - Karing: [APK для Android](https://github.com/KaringX/karing/releases/download/v1.2.26.2934/karing_1.2.26.2934_android_arm.apk) · [APK для Android TV (ARMv7)](https://github.com/KaringX/karing/releases/download/v1.2.26.2934/karing_1.2.26.2934_android_armeabi-v7a.apk) · [Все релизы](https://github.com/KaringX/karing/releases/latest)
-    - incy: [Google Play](https://play.google.com/store/apps/details?id=llc.itdev.incy) · [APK с GitHub](https://github.com/INCY-DEV/incy-platforms/releases/download/latest/Incy.apk)
-    - Happ: [Google Play](https://play.google.com/store/apps/details?id=com.happproxy) · [APK с GitHub](https://github.com/Happ-proxy/happ-android/releases/latest/download/Happ.apk)
+    - Karing
+        - APK для Android: [Кликните](https://github.com/KaringX/karing/releases/download/v1.2.26.2934/karing_1.2.26.2934_android_arm.apk)
+        - APK для Android TV (ARMv7): [Кликните](https://github.com/KaringX/karing/releases/download/v1.2.26.2934/karing_1.2.26.2934_android_armeabi-v7a.apk)
+        - Все релизы: [Кликните](https://github.com/KaringX/karing/releases/latest)
+    - incy
+        - Google Play: [Кликните](https://play.google.com/store/apps/details?id=llc.itdev.incy)
+        - APK с GitHub: [Кликните](https://github.com/INCY-DEV/incy-platforms/releases/download/latest/Incy.apk)
+    - Happ
+        - Google Play: [Кликните](https://play.google.com/store/apps/details?id=com.happproxy)
+        - APK с GitHub: [Кликните](https://github.com/Happ-proxy/happ-android/releases/latest/download/Happ.apk)
 
     **Huawei (установка напрямую из APK, без GBox):**
 
@@ -150,23 +157,23 @@
 
 ??? Info "macOS / Apple TV"
     ??? Danger "Регион аккаунта РФ"
-        - Karing: [Скачать в App Store](https://apps.apple.com/ru/app/karing/id6472431552)
+        - Karing: [Кликните](https://apps.apple.com/ru/app/karing/id6472431552)
 
         incy и Happ доступны в зарубежном App Store. При необходимости [смените регион по инструкции](connection.md#app-store-region).
 
     ??? Success "Регион аккаунта не РФ"
-        - Karing: [Скачать в App Store](https://apps.apple.com/us/app/karing/id6472431552)
+        - Karing: [Кликните](https://apps.apple.com/us/app/karing/id6472431552)
         - incy: [Кликните](https://apps.apple.com/us/app/incy/id6756943388)
         - Happ: [Кликните](https://apps.apple.com/us/app/happ-proxy-utility/id6504287215)
 
 ??? Info "Windows"
-    - Karing: [Скачать](https://github.com/KaringX/karing/releases/latest)
+    - Karing: [Кликните](https://github.com/KaringX/karing/releases/latest)
     - incy: [Кликните](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-windows-setup.exe)
     - Happ: [Кликните](https://github.com/Happ-proxy/happ-desktop/releases/latest/download/setup-Happ.x64.exe)
     - Happ для Windows 7 — [скачать Legacy 1.0.2](https://github.com/Happ-proxy/happ-desktop/releases/download/1.0.2/setup-Happ.x86.exe). Разработчик обозначает её как последнюю версию с поддержкой Windows 7; [официальный релиз](https://github.com/Happ-proxy/happ-desktop/releases/tag/1.0.2). Это отдельная старая сборка, не обновляйте её до актуальной версии для Windows 10–11.
 
 ??? Info "Linux"
-    - Karing: [Скачать](https://github.com/KaringX/karing/releases/latest)
+    - Karing: [Кликните](https://github.com/KaringX/karing/releases/latest)
     - incy: [Кликните](https://github.com/INCY-DEV/incy-platforms/releases/latest)
     - Happ: [Кликните](https://github.com/Happ-proxy/happ-desktop/releases/latest)
 
