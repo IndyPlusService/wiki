@@ -116,10 +116,6 @@
 ??? Info "Android / Android TV"
     Если приложение недоступно в Google Play, скачайте официальный APK по ссылке рядом с ним.
 
-    - Karing
-        - APK для Android: [Кликните](https://github.com/KaringX/karing/releases/download/v1.2.26.2934/karing_1.2.26.2934_android_arm.apk)
-        - APK для Android TV (ARMv7): [Кликните](https://github.com/KaringX/karing/releases/download/v1.2.26.2934/karing_1.2.26.2934_android_armeabi-v7a.apk)
-        - Все релизы: [Кликните](https://github.com/KaringX/karing/releases/latest)
     - incy
         - Google Play: [Кликните](https://play.google.com/store/apps/details?id=llc.itdev.incy)
         - APK с GitHub: [Кликните](https://github.com/INCY-DEV/incy-platforms/releases/download/latest/Incy.apk)
@@ -138,14 +134,12 @@
 
             На странице подписки нажмите **«Добавить в OneXray»**. В расширенных настройках включите **HWID** и сохраните подписку.
 
-        - Karing: [Кликните](https://apps.apple.com/ru/app/karing/id6472431552)
 
             В настройках профиля (карандаш) включите **X-HWID**, сохраните и обновите подписку. Если профиль ещё не добавлен, включите **X-HWID** при добавлении.
 
         incy и Happ доступны в зарубежном App Store. При необходимости [смените регион по инструкции](connection.md#app-store-region).
 
     ??? Success "Регион аккаунта не РФ"
-        - Karing: [Кликните](https://apps.apple.com/us/app/karing/id6472431552)
 
             В настройках профиля (карандаш) включите **X-HWID**, сохраните и обновите подписку. Если профиль ещё не добавлен, включите **X-HWID** при добавлении.
 
@@ -154,23 +148,19 @@
 
 ??? Info "macOS / Apple TV"
     ??? Danger "Регион аккаунта РФ"
-        - Karing: [Кликните](https://apps.apple.com/ru/app/karing/id6472431552)
 
         incy и Happ доступны в зарубежном App Store. При необходимости [смените регион по инструкции](connection.md#app-store-region).
 
     ??? Success "Регион аккаунта не РФ"
-        - Karing: [Кликните](https://apps.apple.com/us/app/karing/id6472431552)
         - incy: [Кликните](https://apps.apple.com/us/app/incy/id6756943388)
         - Happ: [Кликните](https://apps.apple.com/us/app/happ-proxy-utility/id6504287215)
 
 ??? Info "Windows"
-    - Karing: [Кликните](https://github.com/KaringX/karing/releases/latest)
     - incy: [Кликните](https://github.com/INCY-DEV/incy-platforms/releases/latest/download/incy-windows-setup.exe)
     - Happ: [Кликните](https://github.com/Happ-proxy/happ-desktop/releases/latest/download/setup-Happ.x64.exe)
     - Happ для Windows 7 — [скачать Legacy 1.0.2](https://github.com/Happ-proxy/happ-desktop/releases/download/1.0.2/setup-Happ.x86.exe). Разработчик обозначает её как последнюю версию с поддержкой Windows 7; [официальный релиз](https://github.com/Happ-proxy/happ-desktop/releases/tag/1.0.2). Это отдельная старая сборка, не обновляйте её до актуальной версии для Windows 10–11.
 
 ??? Info "Linux"
-    - Karing: [Кликните](https://github.com/KaringX/karing/releases/latest)
     - incy: [Кликните](https://github.com/INCY-DEV/incy-platforms/releases/latest)
     - Happ: [Кликните](https://github.com/Happ-proxy/happ-desktop/releases/latest)
 
