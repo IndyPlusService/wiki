@@ -129,16 +129,19 @@
     - Happ APK: [Кликните](https://github.com/Happ-proxy/happ-android/releases/latest/download/Happ.apk)
 
 ??? Info "iPhone / iPad"
-    ??? Info "Российский App Store"
-        - [STEALTHNET](https://apps.apple.com/ru/app/stealthnet/id6790923730) — iPhone, iOS 17 и новее.
-        - [dropweb](https://apps.apple.com/ru/app/dropweb-vpn-%D0%B8-%D0%BF%D1%80%D0%BE%D0%BA%D1%81%D0%B8-%D0%BA%D0%BB%D0%B8%D0%B5%D0%BD%D1%82/id6827629751) — iPhone, iOS 15 и новее.
-        - [OneXray](https://apps.apple.com/ru/app/onexray/id6745748773).
+    ??? Danger "Регион аккаунта РФ"
+        - STEALTHNET: [Кликните](https://apps.apple.com/ru/app/stealthnet/id6790923730)
+        - dropweb: [Кликните](https://apps.apple.com/ru/app/dropweb-vpn-%D0%B8-%D0%BF%D1%80%D0%BE%D0%BA%D1%81%D0%B8-%D0%BA%D0%BB%D0%B8%D0%B5%D0%BD%D1%82/id6827629751)
+        - OneXray: [Кликните](https://apps.apple.com/ru/app/onexray/id6745748773)
 
-    ??? Info "Зарубежный App Store"
-        - [Happ](https://apps.apple.com/us/app/happ-proxy-utility/id6504287215).
-        - [incy](https://apps.apple.com/us/app/incy/id6756943388).
+            При добавлении ссылки для подключения в расширенных настройках включите **HWID** и сохраните подписку.
 
-    [Как добавить подписку в каждое приложение](connection.md#ios-connection).
+        incy и Happ доступны в зарубежном App Store. При необходимости [смените регион по инструкции](connection.md#app-store-region).
+
+    ??? Success "Регион аккаунта не РФ"
+
+        - incy: [Кликните](https://apps.apple.com/us/app/incy/id6756943388)
+        - Happ: [Кликните](https://apps.apple.com/us/app/happ-proxy-utility/id6504287215)
 
 ??? Info "macOS / Apple TV"
     ??? Danger "Регион аккаунта РФ"
